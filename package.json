@@ -1,0 +1,7 @@
+{
+  "name": "ifrstr",
+  "private": "true",
+  "workspaces": [
+    "packages"
+  ]
+}
