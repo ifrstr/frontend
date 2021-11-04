@@ -233,7 +233,7 @@
   resolved "https://registry.npmmirror.com/@humanwhocodes/object-schema/download/@humanwhocodes/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha1-tSBSnsIdjllFoYUd/Rwy6U45/0U=
 
-"@napi-rs/triples@1.0.3":
+"@napi-rs/triples@1.0.3", "@napi-rs/triples@^1.0.3":
   version "1.0.3"
   resolved "https://registry.nlark.com/@napi-rs/triples/download/@napi-rs/triples-1.0.3.tgz?cache=0&sync_timestamp=1626933308610&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40napi-rs%2Ftriples%2Fdownload%2F%40napi-rs%2Ftriples-1.0.3.tgz#76d6d0c3f4d16013c61e45dfca5ff1e6c31ae53c"
   integrity sha1-dtbQw/TRYBPGHkXfyl/x5sMa5Tw=
@@ -332,6 +332,13 @@
   resolved "https://registry.npmmirror.com/@next/swc-win32-x64-msvc/download/@next/swc-win32-x64-msvc-12.0.2.tgz?cache=0&sync_timestamp=1635733928640&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40next%2Fswc-win32-x64-msvc%2Fdownload%2F%40next%2Fswc-win32-x64-msvc-12.0.2.tgz#5eb3f054395fb2b1c57b981c446df17d0507febd"
   integrity sha1-XrPwVDlfsrHFe5gcRG3xfQUH/r0=
 
+"@node-rs/helper@^1.0.0":
+  version "1.2.1"
+  resolved "https://registry.nlark.com/@node-rs/helper/download/@node-rs/helper-1.2.1.tgz?cache=0&sync_timestamp=1626937553283&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40node-rs%2Fhelper%2Fdownload%2F%40node-rs%2Fhelper-1.2.1.tgz#e079b05f21ff4329d82c4e1f71c0290e4ecdc70c"
+  integrity sha1-4HmwXyH/QynYLE4fccApDk7Nxww=
+  dependencies:
+    "@napi-rs/triples" "^1.0.3"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.nlark.com/@nodelib/fs.scandir/download/@nodelib/fs.scandir-2.1.5.tgz?cache=0&sync_timestamp=1622792738877&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40nodelib%2Ffs.scandir%2Fdownload%2F%40nodelib%2Ffs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -357,6 +364,80 @@
   version "1.0.9"
   resolved "https://registry.npmmirror.com/@rushstack/eslint-patch/download/@rushstack/eslint-patch-1.0.9.tgz#1168db664faab4c3bb82c76124b393970e80bf89"
   integrity sha1-EWjbZk+qtMO7gsdhJLOTlw6Av4k=
+
+"@swc/core-android-arm64@^1.2.105":
+  version "1.2.105"
+  resolved "https://registry.npmmirror.com/@swc/core-android-arm64/download/@swc/core-android-arm64-1.2.105.tgz#ff50fbbb6b15c8f3f27a1def98b8e350c834a5bc"
+  integrity sha1-/1D7u2sVyPPyeh3vmLjjUMg0pbw=
+
+"@swc/core-darwin-arm64@^1.2.105":
+  version "1.2.106"
+  resolved "https://registry.npmmirror.com/@swc/core-darwin-arm64/download/@swc/core-darwin-arm64-1.2.106.tgz#02a9ce94fee6d7f8a81a94233e4c455d55273fed"
+  integrity sha1-AqnOlP7m1/ioGpQjPkxFXVUnP+0=
+
+"@swc/core-darwin-x64@^1.2.105":
+  version "1.2.105"
+  resolved "https://registry.npmmirror.com/@swc/core-darwin-x64/download/@swc/core-darwin-x64-1.2.105.tgz#15f51e8c22d323243a6c91be97d3da6e6763d8a4"
+  integrity sha1-FfUejCLTIyQ6bJG+l9Pabmdj2KQ=
+
+"@swc/core-linux-arm-gnueabihf@^1.2.105":
+  version "1.2.105"
+  resolved "https://registry.npmmirror.com/@swc/core-linux-arm-gnueabihf/download/@swc/core-linux-arm-gnueabihf-1.2.105.tgz#a126b7f1dfbce43e818e4911eafa2c92f35cacc9"
+  integrity sha1-oSa38d+85D6BjkkR6voskvNcrMk=
+
+"@swc/core-linux-arm64-gnu@^1.2.105":
+  version "1.2.105"
+  resolved "https://registry.npmmirror.com/@swc/core-linux-arm64-gnu/download/@swc/core-linux-arm64-gnu-1.2.105.tgz#02e3d0db4f32722ee83eef34e340dc633f204f9b"
+  integrity sha1-AuPQ208yci7oPu8040DcYz8gT5s=
+
+"@swc/core-linux-arm64-musl@^1.2.105":
+  version "1.2.105"
+  resolved "https://registry.npmmirror.com/@swc/core-linux-arm64-musl/download/@swc/core-linux-arm64-musl-1.2.105.tgz#b2151353da3ec6068e69b1a590f98e1913c5727b"
+  integrity sha1-shUTU9o+xgaOabGlkPmOGRPFcns=
+
+"@swc/core-linux-x64-gnu@^1.2.105":
+  version "1.2.105"
+  resolved "https://registry.npmmirror.com/@swc/core-linux-x64-gnu/download/@swc/core-linux-x64-gnu-1.2.105.tgz#7ee437db9a2b95e9da10ab555471862ebc41c438"
+  integrity sha1-fuQ325orlenaEKtVVHGGLrxBxDg=
+
+"@swc/core-linux-x64-musl@^1.2.105":
+  version "1.2.105"
+  resolved "https://registry.npmmirror.com/@swc/core-linux-x64-musl/download/@swc/core-linux-x64-musl-1.2.105.tgz#45947441d99c84affb296b9ab2fe96a376ed14ac"
+  integrity sha1-RZR0QdmchK/7KWuasv6Wo3btFKw=
+
+"@swc/core-win32-arm64-msvc@^1.2.105":
+  version "1.2.105"
+  resolved "https://registry.npmmirror.com/@swc/core-win32-arm64-msvc/download/@swc/core-win32-arm64-msvc-1.2.105.tgz#e59f267ac5ee97872cc42583b02aa53910e32920"
+  integrity sha1-5Z8mesXul4csxCWDsCqlORDjKSA=
+
+"@swc/core-win32-ia32-msvc@^1.2.105":
+  version "1.2.105"
+  resolved "https://registry.npmmirror.com/@swc/core-win32-ia32-msvc/download/@swc/core-win32-ia32-msvc-1.2.105.tgz#5c4fe065d6b86a108bc5e1f7fefd7bc87758bba9"
+  integrity sha1-XE/gZda4ahCLxeH3/v17yHdYu6k=
+
+"@swc/core-win32-x64-msvc@^1.2.105":
+  version "1.2.105"
+  resolved "https://registry.npmmirror.com/@swc/core-win32-x64-msvc/download/@swc/core-win32-x64-msvc-1.2.105.tgz#544e92378688e3bfa1a88f0a75f56196985ad8e1"
+  integrity sha1-VE6SN4aI47+hqI8KdfVhlpha2OE=
+
+"@swc/core@^1.2.105":
+  version "1.2.105"
+  resolved "https://registry.npmmirror.com/@swc/core/download/@swc/core-1.2.105.tgz?cache=0&sync_timestamp=1635502220917&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40swc%2Fcore%2Fdownload%2F%40swc%2Fcore-1.2.105.tgz#098a5962f6d129c9766f9679a95694d18b682661"
+  integrity sha1-CYpZYvbRKcl2b5Z5qVaU0YtoJmE=
+  dependencies:
+    "@node-rs/helper" "^1.0.0"
+  optionalDependencies:
+    "@swc/core-android-arm64" "^1.2.105"
+    "@swc/core-darwin-arm64" "^1.2.105"
+    "@swc/core-darwin-x64" "^1.2.105"
+    "@swc/core-linux-arm-gnueabihf" "^1.2.105"
+    "@swc/core-linux-arm64-gnu" "^1.2.105"
+    "@swc/core-linux-arm64-musl" "^1.2.105"
+    "@swc/core-linux-x64-gnu" "^1.2.105"
+    "@swc/core-linux-x64-musl" "^1.2.105"
+    "@swc/core-win32-arm64-msvc" "^1.2.105"
+    "@swc/core-win32-ia32-msvc" "^1.2.105"
+    "@swc/core-win32-x64-msvc" "^1.2.105"
 
 "@types/json5@^0.0.29":
   version "0.0.29"
