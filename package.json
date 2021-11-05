@@ -12,6 +12,7 @@
   "resolutions": {
     "@swc/core": "1.2.105",
     "next": "12.0.2",
+    "normalize.css": "8",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "styled-components": "^5",
@@ -31,6 +32,7 @@
     "eslint-config-next": "12.0.2",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "4.0.0",
+    "normalize.css": "8",
     "stylelint": "14.0.1",
     "stylelint-config-prettier": "9.0.3",
     "stylelint-config-standard-scss": "2.0.0",
