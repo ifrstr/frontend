@@ -1,9 +1,5 @@
 {
   "extends": "../../tsconfig.json",
-  "compilerOptions": {
-    "outDir": "out",
-    "rootDir": "src"
-  },
   "include": [
     "**/*.ts",
     "**/*.tsx"
