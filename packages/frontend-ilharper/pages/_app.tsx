@@ -4,6 +4,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 
 import App from '@ifrstr/ui/components/layout/App'
+import Main from '@ifrstr/ui/components/layout/Main'
 import NavBar from '@ifrstr/ui/components/layout/NavBar'
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -15,7 +16,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           { name: 'about', href: '/about' },
         ]}
       />
-      <Component {...pageProps} />
+      <Main>
+        <Component {...pageProps} />
+      </Main>
     </App>
   )
 }
