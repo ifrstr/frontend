@@ -1,19 +1,15 @@
 import Link from 'next/link'
-
-export type NavBarLink = {
-  name: string
-  href: string
-}
+import { StrLink } from '../../types/StrLink'
 
 export type NavBarProps = {
-  links: NavBarLink[]
+  links: StrLink[]
 }
 
 const NavBar: React.FC<NavBarProps> = (props: NavBarProps) => (
   <nav>
     <div>
       <ul>
-        {props.links.map((x: NavBarLink) => (
+        {props.links.map((x: StrLink) => (
           <li>
             <Link href={x.href}>
               <a>
