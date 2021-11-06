@@ -1,4 +1,5 @@
 import 'normalize.css'
+import '@ifrstr/ui//styles/index.css'
 import '../styles/globals.css'
 
 import type { AppProps } from 'next/app'
