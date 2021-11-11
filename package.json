@@ -11,6 +11,7 @@
   },
   "resolutions": {
     "@swc/core": "1.2.105",
+    "@types/react": "^17",
     "next": "12.0.2",
     "normalize.css": "8",
     "react": "17.0.2",

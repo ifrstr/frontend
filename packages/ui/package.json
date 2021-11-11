@@ -1,5 +1,50 @@
 {
   "name": "@ifrstr/ui",
   "version": "0.1.0",
-  "private": true
+  "scripts": {
+    "build": "ts-node scripts/build"
+  },
+  "resolutions": {
+    "@types/react": "^17",
+    "next": "^12",
+    "react": "^17",
+    "webpack": "^5"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "*",
+    "@types/node": "*",
+    "@types/react": "^17",
+    "@types/react-dev-utils": "^9",
+    "@types/resolve": "*",
+    "babel-loader": "*",
+    "babel-plugin-named-asset-import": "*",
+    "babel-preset-react-app": "*",
+    "cross-env": "*",
+    "css-loader": "*",
+    "file-loader": "*",
+    "fs-extra": "*",
+    "mini-css-extract-plugin": "*",
+    "optimize-css-assets-webpack-plugin": "*",
+    "postcss-loader": "*",
+    "postcss-normalize": "*",
+    "postcss-safe-parser": "*",
+    "react-dev-utils": "^11",
+    "resolve": "*",
+    "resolve-url-loader": "*",
+    "sass-loader": "*",
+    "ts-node": "*",
+    "tslib": "*",
+    "typescript": "^4",
+    "url-loader": "*",
+    "webpack": "^5",
+    "webpack-cli": "*"
+  },
+  "peerDependencies": {
+    "next": "^12",
+    "react": "^17"
+  },
+  "dependencies": {
+    "next": "^12",
+    "react": "^17"
+  }
 }

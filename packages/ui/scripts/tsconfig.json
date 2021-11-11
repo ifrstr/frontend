@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "out",
+    "rootDir": ".",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "removeComments": true,
+    "types": [
+      "@types/node",
+      "@types/react-dev-utils"
+    ]
+  },
+  "include": [
+    "*.ts"
+  ]
+}
