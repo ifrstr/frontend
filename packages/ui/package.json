@@ -40,7 +40,8 @@
     "typescript": "^4",
     "url-loader": "*",
     "webpack": "^5",
-    "webpack-cli": "*"
+    "webpack-cli": "*",
+    "webpackbar": "*"
   },
   "peerDependencies": {
     "next": "^12",

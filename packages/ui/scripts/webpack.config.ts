@@ -12,6 +12,7 @@ import ModuleScopePlugin from 'react-dev-utils/ModuleScopePlugin'
 import resolve from 'resolve'
 import TerserPlugin from 'terser-webpack-plugin'
 import webpack from 'webpack'
+import Webpackbar from 'webpackbar'
 import getClientEnvironment from './env'
 import paths from './paths'
 
@@ -293,6 +294,7 @@ const webpackConfig = (): webpack.Configuration => ({
     ],
   },
   plugins: [
+    new Webpackbar({ profile: true }),
     new ModuleNotFoundPlugin(paths.appPath),
     new webpack.DefinePlugin(getClientEnvironment().stringified),
     new MiniCssExtractPlugin({
