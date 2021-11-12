@@ -2,7 +2,7 @@
   "name": "@ifrstr/ui",
   "version": "0.1.0",
   "scripts": {
-    "build": "ts-node -T scripts/build"
+    "build": "ts-node scripts/build"
   },
   "resolutions": {
     "@types/react": "^17",
