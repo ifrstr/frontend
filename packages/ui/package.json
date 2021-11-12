@@ -12,7 +12,10 @@
   },
   "devDependencies": {
     "@types/fs-extra": "*",
+    "@types/mini-css-extract-plugin": "*",
     "@types/node": "*",
+    "@types/optimize-css-assets-webpack-plugin": "*",
+    "@types/postcss-safe-parser": "*",
     "@types/react": "^17",
     "@types/react-dev-utils": "^9",
     "@types/resolve": "*",
