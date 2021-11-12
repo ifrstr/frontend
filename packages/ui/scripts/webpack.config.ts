@@ -1,7 +1,6 @@
 /// <reference types="./types" />
 
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
-import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin'
 import path from 'path'
 import postcssNormalize from 'postcss-normalize'
 import safePostCssParser from 'postcss-safe-parser'
@@ -15,6 +14,7 @@ import webpack from 'webpack'
 import Webpackbar from 'webpackbar'
 import getClientEnvironment from './env'
 import paths from './paths'
+import CSSMinimizerWebpackPlugin from 'css-minimizer-webpack-plugin'
 
 const reactRefreshOverlayEntry = require.resolve(
   'react-dev-utils/refreshOverlayInterop'
@@ -117,16 +117,16 @@ const webpackConfig = (): webpack.Configuration => ({
           },
         },
       }),
-      new OptimizeCSSAssetsPlugin({
-        cssProcessorOptions: {
-          parser: safePostCssParser,
-          map: {
-            inline: false,
-            annotation: true,
-          },
-        },
-        cssProcessorPluginOptions: {
+      new CSSMinimizerWebpackPlugin({
+        minimizerOptions: {
           preset: ['default', { minifyFontValues: { removeQuotes: false } }],
+          processorOptions: {
+            parser: safePostCssParser,
+            map: {
+              inline: false,
+              annotation: true,
+            },
+          },
         },
       }),
     ],

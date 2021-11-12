@@ -11,10 +11,10 @@
     "webpack": "^5"
   },
   "devDependencies": {
+    "@types/css-minimizer-webpack-plugin": "*",
     "@types/fs-extra": "*",
     "@types/mini-css-extract-plugin": "*",
     "@types/node": "*",
-    "@types/optimize-css-assets-webpack-plugin": "*",
     "@types/postcss-safe-parser": "*",
     "@types/react": "^17",
     "@types/react-dev-utils": "^9",
@@ -27,7 +27,6 @@
     "file-loader": "*",
     "fs-extra": "*",
     "mini-css-extract-plugin": "*",
-    "optimize-css-assets-webpack-plugin": "*",
     "postcss-loader": "*",
     "postcss-normalize": "*",
     "postcss-safe-parser": "*",
@@ -48,6 +47,7 @@
     "react": "^17"
   },
   "dependencies": {
+    "css-minimizer-webpack-plugin": "*",
     "next": "^12",
     "react": "^17"
   }
