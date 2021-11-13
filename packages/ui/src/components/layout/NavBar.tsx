@@ -23,4 +23,4 @@ const NavBar: React.FC<NavBarProps> = (props: NavBarProps) => (
   </nav>
 )
 
-export default NavBar
+export { NavBar }

@@ -1,14 +1,12 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outFile": "build/index.d.ts",
+    "outDir": "out",
     "rootDir": "src",
-    "module": "CommonJS",
     "declaration": true,
     "declarationMap": true,
     "noEmit": false,
-    "emitDeclarationOnly": true,
-    "isolatedModules": false
+    "emitDeclarationOnly": true
   },
   "include": [
     "src/**/*.ts",

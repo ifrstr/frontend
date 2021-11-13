@@ -3,9 +3,10 @@
   "description": "UI framework for IlHarper Infrastructure.",
   "version": "0.1.0",
   "main": "build/index.js",
-  "types": "build/index.d.ts",
+  "types": "out",
   "files": [
-    "build"
+    "build",
+    "out"
   ],
   "scripts": {
     "build": "npm run build:scripts && npm run build:webpack && npm run build:types",

@@ -69,4 +69,4 @@ const Footer: React.FC<FooterProps> = (props: FooterProps) => {
   )
 }
 
-export default Footer
+export { Footer }
