@@ -3,11 +3,12 @@
 process.env.BABEL_ENV = 'production'
 process.env.NODE_ENV = 'production'
 
+import CSSMinimizerWebpackPlugin from 'css-minimizer-webpack-plugin'
+import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import path from 'path'
 import postcssNormalize from 'postcss-normalize'
 import safePostCssParser from 'postcss-safe-parser'
-import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin'
 import getCSSModuleLocalIdent from 'react-dev-utils/getCSSModuleLocalIdent'
 import ModuleNotFoundPlugin from 'react-dev-utils/ModuleNotFoundPlugin'
 import ModuleScopePlugin from 'react-dev-utils/ModuleScopePlugin'
@@ -17,11 +18,6 @@ import webpack from 'webpack'
 import Webpackbar from 'webpackbar'
 import getClientEnvironment from './env'
 import paths from './paths'
-import CSSMinimizerWebpackPlugin from 'css-minimizer-webpack-plugin'
-
-const reactRefreshOverlayEntry = require.resolve(
-  'react-dev-utils/refreshOverlayInterop'
-)
 
 const cssRegex = /\.css$/
 const cssModuleRegex = /\.module\.css$/
@@ -44,17 +40,18 @@ function getStyleLoaders(
     {
       loader: require.resolve('postcss-loader'),
       options: {
-        ident: 'postcss',
-        plugins: () => [
-          require('postcss-flexbugs-fixes'),
-          require('postcss-preset-env')({
-            autoprefixer: {
-              flexbox: 'no-2009',
-            },
-            stage: 3,
-          }),
-          postcssNormalize(),
-        ],
+        postcssOptions: {
+          plugins: () => [
+            require('postcss-flexbugs-fixes'),
+            require('postcss-preset-env')({
+              autoprefixer: {
+                flexbox: 'no-2009',
+              },
+              stage: 3,
+            }),
+            postcssNormalize(),
+          ],
+        },
         sourceMap: true,
       },
     },
@@ -83,17 +80,17 @@ const webpackConfig = (): webpack.Configuration => ({
   mode: 'production',
   bail: true,
   devtool: 'source-map',
-  entry: paths.appIndexJs,
+  entry: [paths.appIndexJs, paths.appIndexCss],
   output: {
     path: paths.appBuild,
     pathinfo: false,
-    filename: 'static/js/[name].[contenthash:8].js',
-    chunkFilename: 'static/js/[name].[contenthash:8].chunk.js',
+    filename: '[name].js',
     devtoolModuleFilenameTemplate: (info: { absoluteResourcePath: string }) =>
       path
         .relative(paths.appSrc, info.absoluteResourcePath)
         .replace(/\\/g, '/'),
     globalObject: 'this',
+    library: { type: 'commonjs2' },
   },
   optimization: {
     minimize: true,
@@ -133,13 +130,6 @@ const webpackConfig = (): webpack.Configuration => ({
         },
       }),
     ],
-    splitChunks: {
-      chunks: 'all',
-      name: false,
-    },
-    runtimeChunk: {
-      name: (entrypoint: any) => `runtime-${entrypoint.name}`,
-    },
   },
   resolve: {
     modules: ['node_modules', paths.appNodeModules].concat([]),
@@ -158,17 +148,13 @@ const webpackConfig = (): webpack.Configuration => ({
     ],
     alias: {
       'react-native': 'react-native-web',
-      ...{},
     },
     plugins: [
       new ModuleScopePlugin(paths.appSrc, [
         paths.appPackageJson,
-        reactRefreshOverlayEntry,
+        require.resolve('react-dev-utils/refreshOverlayInterop'),
       ]),
     ],
-  },
-  resolveLoader: {
-    plugins: [],
   },
   module: {
     strictExportPresence: true,
@@ -181,7 +167,7 @@ const webpackConfig = (): webpack.Configuration => ({
             loader: require.resolve('url-loader'),
             options: {
               limit: 10000,
-              name: 'static/media/[name].[hash:8].[ext]',
+              name: 'assets/[name].[ext]',
             },
           },
           {
@@ -273,7 +259,7 @@ const webpackConfig = (): webpack.Configuration => ({
             loader: require.resolve('file-loader'),
             exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/],
             options: {
-              name: 'static/media/[name].[hash:8].[ext]',
+              name: 'assets/[name].[ext]',
             },
           },
           // ** STOP ** Are you adding a new loader?
@@ -287,8 +273,8 @@ const webpackConfig = (): webpack.Configuration => ({
     new ModuleNotFoundPlugin(paths.appPath),
     new webpack.DefinePlugin(getClientEnvironment().stringified),
     new MiniCssExtractPlugin({
-      filename: 'static/css/[name].[contenthash:8].css',
-      chunkFilename: 'static/css/[name].[contenthash:8].chunk.css',
+      filename: '[name].css',
+      chunkFilename: '[name].chunk.css',
     }),
     // Moment.js
     new webpack.IgnorePlugin({
@@ -301,12 +287,6 @@ const webpackConfig = (): webpack.Configuration => ({
       }),
       async: false,
       checkSyntacticErrors: true,
-      resolveModuleNameModule: process.versions.pnp
-        ? `${__dirname}/pnpTs.js`
-        : undefined,
-      resolveTypeReferenceDirectiveModule: process.versions.pnp
-        ? `${__dirname}/pnpTs.js`
-        : undefined,
       tsconfig: paths.appTsConfig,
       reportFiles: [
         '../**/src/**/*.{ts,tsx}',
