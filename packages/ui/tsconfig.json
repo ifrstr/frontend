@@ -1,7 +1,7 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outFile": "types/index.d.ts",
+    "outFile": "build/index.d.ts",
     "rootDir": "src",
     "module": "CommonJS",
     "declaration": true,

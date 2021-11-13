@@ -3,10 +3,9 @@
   "description": "UI framework for IlHarper Infrastructure.",
   "version": "0.1.0",
   "main": "build/main.js",
-  "types": "types/index.d.ts",
+  "types": "build/index.d.ts",
   "files": [
-    "build",
-    "types"
+    "build"
   ],
   "scripts": {
     "build": "tsc -p scripts && webpack -c scripts/out/webpack.config.js && tsc -b"
