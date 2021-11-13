@@ -269,7 +269,10 @@ const webpackConfig = (): webpack.Configuration => ({
     ],
   },
   plugins: [
-    new Webpackbar({ profile: true }),
+    new Webpackbar({
+      reporters: ['fancy', 'profile'],
+      profile: true,
+    }),
     new ModuleNotFoundPlugin(paths.appPath),
     new webpack.DefinePlugin(getClientEnvironment().stringified),
     new MiniCssExtractPlugin({
