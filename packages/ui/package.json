@@ -8,7 +8,12 @@
     "build"
   ],
   "scripts": {
-    "build": "tsc -p scripts && webpack -c scripts/out/webpack.config.js && tsc -b"
+    "build": "npm run build:scripts && npm run build:webpack && npm run build:types",
+    "watch": "npm run build:scripts && npm run build:types && npm run watch:webpack",
+    "build:scripts": "tsc -p scripts",
+    "build:webpack": "webpack -c scripts/out/webpack.config.js",
+    "build:types": "tsc -b",
+    "watch:webpack": "webpack watch -c scripts/out/webpack.config.js"
   },
   "repository": "https://github.com/ifrstr/frontend",
   "homepage": "https://github.com/ifrstr/frontend",
