@@ -5,12 +5,14 @@
     "build": "ts-node scripts/build"
   },
   "resolutions": {
+    "@swc/core": "^1",
     "@types/react": "^17",
     "next": "^12",
     "react": "^17",
     "webpack": "^5"
   },
   "devDependencies": {
+    "@swc/core": "^1",
     "@types/css-minimizer-webpack-plugin": "*",
     "@types/fs-extra": "*",
     "@types/mini-css-extract-plugin": "*",
@@ -34,6 +36,7 @@
     "resolve": "*",
     "resolve-url-loader": "*",
     "sass-loader": "*",
+    "swc-loader": "*",
     "ts-node": "*",
     "tslib": "*",
     "typescript": "^4",
