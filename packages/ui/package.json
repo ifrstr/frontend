@@ -6,6 +6,7 @@
   },
   "resolutions": {
     "@swc/core": "^1",
+    "@swc/helpers": "*",
     "@types/react": "^17",
     "next": "^12",
     "react": "^17",
@@ -13,6 +14,7 @@
   },
   "devDependencies": {
     "@swc/core": "^1",
+    "@swc/helpers": "*",
     "@types/css-minimizer-webpack-plugin": "*",
     "@types/fs-extra": "*",
     "@types/mini-css-extract-plugin": "*",
