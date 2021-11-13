@@ -1,5 +1,8 @@
 /// <reference types="./types" />
 
+process.env.BABEL_ENV = 'production'
+process.env.NODE_ENV = 'production'
+
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import path from 'path'
 import postcssNormalize from 'postcss-normalize'
