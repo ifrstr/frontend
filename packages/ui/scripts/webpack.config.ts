@@ -84,7 +84,7 @@ const webpackConfig = (): webpack.Configuration => ({
   output: {
     path: paths.appBuild,
     pathinfo: false,
-    filename: '[name].js',
+    filename: 'index.js',
     devtoolModuleFilenameTemplate: (info: { absoluteResourcePath: string }) =>
       path
         .relative(paths.appSrc, info.absoluteResourcePath)
@@ -276,8 +276,7 @@ const webpackConfig = (): webpack.Configuration => ({
     new ModuleNotFoundPlugin(paths.appPath),
     new webpack.DefinePlugin(getClientEnvironment().stringified),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[name].chunk.css',
+      filename: 'index.css',
     }),
     // Moment.js
     new webpack.IgnorePlugin({

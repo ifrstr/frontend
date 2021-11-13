@@ -2,7 +2,7 @@
   "name": "@ifrstr/ui",
   "description": "UI framework for IlHarper Infrastructure.",
   "version": "0.1.0",
-  "main": "build/main.js",
+  "main": "build/index.js",
   "types": "build/index.d.ts",
   "files": [
     "build"
