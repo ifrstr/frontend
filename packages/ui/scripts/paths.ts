@@ -23,7 +23,7 @@ export default {
   appPath: resolveApp('.'),
   appBuild: resolveApp('build'),
   appIndexJs: resolveApp('src/index.ts'),
-  appIndexCss: resolveApp('src/styles/index.css'),
+  appIndexCss: resolveApp('src/styles/global/index.css'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
   appTsConfig: resolveApp('tsconfig.json'),
