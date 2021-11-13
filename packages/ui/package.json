@@ -1,8 +1,9 @@
 {
   "name": "@ifrstr/ui",
   "version": "0.1.0",
+  "types": "types/index.d.ts",
   "scripts": {
-    "build": "tsc -p scripts && webpack -c scripts/out/webpack.config.js"
+    "build": "tsc -p scripts && webpack -c scripts/out/webpack.config.js && tsc -b"
   },
   "resolutions": {
     "@swc/core": "^1",
