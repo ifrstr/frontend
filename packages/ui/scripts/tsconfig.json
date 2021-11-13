@@ -8,6 +8,7 @@
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
     "removeComments": true,
+    "skipLibCheck": true,
     "types": [
       "@types/node",
       "@types/react-dev-utils"
