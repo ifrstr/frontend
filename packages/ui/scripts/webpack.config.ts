@@ -8,7 +8,7 @@ import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import path from 'path'
 import postcssNormalize from 'postcss-normalize'
-import safePostCssParser from 'postcss-safe-parser'
+// import safePostCssParser from 'postcss-safe-parser'
 import getCSSModuleLocalIdent from 'react-dev-utils/getCSSModuleLocalIdent'
 import ModuleNotFoundPlugin from 'react-dev-utils/ModuleNotFoundPlugin'
 import ModuleScopePlugin from 'react-dev-utils/ModuleScopePlugin'
@@ -121,7 +121,7 @@ const webpackConfig = (): webpack.Configuration => ({
         minimizerOptions: {
           preset: ['default', { minifyFontValues: { removeQuotes: false } }],
           processorOptions: {
-            parser: safePostCssParser,
+            // parser: safePostCssParser,
             map: {
               inline: false,
               annotation: true,
