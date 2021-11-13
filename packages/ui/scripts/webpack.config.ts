@@ -182,58 +182,44 @@ const webpackConfig = (): webpack.Configuration => ({
             },
           },
           {
-            test: /\.(js|mjs|jsx|ts|tsx)$/,
+            test: /\.(ts|tsx)$/,
             include: paths.appSrc,
-            loader: require.resolve('babel-loader'),
+            loader: require.resolve('swc-loader'),
             options: {
-              customize: require.resolve(
-                'babel-preset-react-app/webpack-overrides'
-              ),
-              presets: [
-                [
-                  require.resolve('babel-preset-react-app'),
-                  {
+              jsc: {
+                externalHelpers: true,
+                target: 'es5',
+                parser: {
+                  syntax: 'typescript',
+                  tsx: true,
+                  dynamicImport: true,
+                },
+                transform: {
+                  react: {
                     runtime: 'automatic',
+                    pragma: 'React.createElement',
+                    pragmaFrag: 'React.Fragment',
+                    throwIfNamespace: true,
+                    useBuiltins: true,
                   },
-                ],
-              ],
-
-              plugins: [
-                [
-                  require.resolve('babel-plugin-named-asset-import'),
-                  {
-                    loaderMap: {
-                      svg: {
-                        ReactComponent:
-                          '@svgr/webpack?-svgo,+titleProp,+ref![path]',
+                  optimizer: {
+                    simplify: false,
+                    globals: {
+                      typeofs: {
+                        window: 'undefined',
                       },
                     },
                   },
-                ],
-              ],
-              cacheDirectory: true,
-              cacheCompression: false,
-              compact: true,
-            },
-          },
-          {
-            test: /\.(js|mjs)$/,
-            exclude: /@babel(?:\/|\\{1,2})runtime/,
-            loader: require.resolve('babel-loader'),
-            options: {
-              babelrc: false,
-              configFile: false,
-              compact: false,
-              presets: [
-                [
-                  require.resolve('babel-preset-react-app/dependencies'),
-                  { helpers: true },
-                ],
-              ],
-              cacheDirectory: true,
-              cacheCompression: false,
-              sourceMaps: true,
-              inputSourceMap: true,
+                },
+              },
+              module: {
+                type: 'commonjs',
+                strict: false,
+                strictMode: true,
+                lazy: false,
+                noInterop: false,
+                ignoreDynamic: false,
+              },
             },
           },
           {
