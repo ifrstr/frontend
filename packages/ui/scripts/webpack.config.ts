@@ -1,6 +1,5 @@
 /// <reference types="./types" />
 
-process.env.BABEL_ENV = 'production'
 process.env.NODE_ENV = 'production'
 
 import CSSMinimizerWebpackPlugin from 'css-minimizer-webpack-plugin'
@@ -106,6 +105,7 @@ const webpackConfig = (): webpack.Configuration => ({
           keep_fnames: false,
           output: {
             ecma: 5,
+            safari10: true,
             comments: false,
             ascii_only: true,
           },
@@ -151,7 +151,6 @@ const webpackConfig = (): webpack.Configuration => ({
   module: {
     strictExportPresence: true,
     rules: [
-      { parser: { requireEnsure: false } },
       {
         oneOf: [
           {
@@ -187,19 +186,22 @@ const webpackConfig = (): webpack.Configuration => ({
                     simplify: false,
                     globals: {
                       typeofs: {
-                        window: 'undefined',
+                        window: 'object',
+                      },
+                      envs: {
+                        NODE_ENV: 'production',
                       },
                     },
                   },
                 },
               },
+              env: {
+                targets: {
+                  node: process.versions.node,
+                },
+              },
               module: {
                 type: 'commonjs',
-                strict: false,
-                strictMode: true,
-                lazy: false,
-                noInterop: false,
-                ignoreDynamic: false,
               },
             },
           },
