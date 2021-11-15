@@ -78,6 +78,7 @@ function getStyleLoaders(
 
 const webpackConfig = (): webpack.Configuration => ({
   mode: 'production',
+  target: 'node',
   devtool: 'source-map',
   entry: [paths.appIndexJs, paths.appIndexCss],
   output: {
