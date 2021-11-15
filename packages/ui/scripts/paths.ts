@@ -19,6 +19,7 @@ const moduleFileExtensions = [
   'jsx',
 ]
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   appPath: resolveApp('.'),
   appBuild: resolveApp('build'),
