@@ -19,6 +19,8 @@ import Webpackbar from 'webpackbar'
 import getClientEnvironment from './env'
 import paths from './paths'
 
+type ExcludesFalse = <T>(x: T | false) => x is T
+
 const cssRegex = /\.css$/
 const cssModuleRegex = /\.module\.css$/
 const sassRegex = /\.(scss|sass)$/
@@ -27,11 +29,10 @@ const sassModuleRegex = /\.module\.(scss|sass)$/
 function getStyleLoaders(
   cssOptions: any,
   preProcessor?: string
-): webpack.RuleSetUse {
-  const loaders = [
-    {
+): webpack.RuleSetUseItem[] {
+  let loaders: webpack.RuleSetUseItem[] = [
+    !cssOptions.modules && {
       loader: MiniCssExtractPlugin.loader,
-      options: {},
     },
     {
       loader: require.resolve('css-loader'),
@@ -55,7 +56,8 @@ function getStyleLoaders(
         sourceMap: true,
       },
     },
-  ]
+  ].filter(Boolean as any as ExcludesFalse)
+
   if (preProcessor) {
     loaders.push(
       {
@@ -211,15 +213,6 @@ const webpackConfig = (): webpack.Configuration => ({
             },
           },
           {
-            test: cssRegex,
-            exclude: cssModuleRegex,
-            use: getStyleLoaders({
-              importLoaders: 1,
-              sourceMap: true,
-            }),
-            sideEffects: true,
-          },
-          {
             test: cssModuleRegex,
             use: getStyleLoaders({
               importLoaders: 1,
@@ -228,18 +221,6 @@ const webpackConfig = (): webpack.Configuration => ({
                 getLocalIdent: getCSSModuleLocalIdent,
               },
             }),
-          },
-          {
-            test: sassRegex,
-            exclude: sassModuleRegex,
-            use: getStyleLoaders(
-              {
-                importLoaders: 3,
-                sourceMap: true,
-              },
-              'sass-loader'
-            ),
-            sideEffects: true,
           },
           {
             test: sassModuleRegex,
@@ -253,6 +234,27 @@ const webpackConfig = (): webpack.Configuration => ({
               },
               'sass-loader'
             ),
+          },
+          {
+            test: cssRegex,
+            exclude: cssModuleRegex,
+            use: getStyleLoaders({
+              importLoaders: 1,
+              sourceMap: true,
+            }),
+            sideEffects: true,
+          },
+          {
+            test: sassRegex,
+            exclude: sassModuleRegex,
+            use: getStyleLoaders(
+              {
+                importLoaders: 3,
+                sourceMap: true,
+              },
+              'sass-loader'
+            ),
+            sideEffects: true,
           },
           {
             loader: require.resolve('file-loader'),
