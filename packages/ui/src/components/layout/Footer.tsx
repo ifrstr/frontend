@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import styles from '../../styles/module/layout/Footer.module.css'
 import { StrLink } from '../../types/StrLink'
 
 export type FooterProps = {
@@ -32,20 +33,16 @@ const Footer: React.FC<FooterProps> = (props: FooterProps) => {
     <footer>
       <div>
         <section>
-          <div
-            style={{
-              borderBottom: '1px solid var(--str-f-p)',
-            }}
-          ></div>
+          <div className={styles['bottom-border']}></div>
           <div>
             {copyrightSegment && (
               <span>
-                <div style={{ float: 'left' }}>{copyrightSegment}</div>
+                <div className={styles.left}>{copyrightSegment}</div>
               </span>
             )}
             {props.legalLinks &&
               props.legalLinks.map((x) => (
-                <Link href={x.href}>
+                <Link href={x.href} key={x.href}>
                   <a target="_blank">
                     <span>{x.name}</span>
                   </a>
@@ -56,7 +53,7 @@ const Footer: React.FC<FooterProps> = (props: FooterProps) => {
             <p>
               {props.beian.map((x) => (
                 <>
-                  <Link href={x.href}>
+                  <Link href={x.href} key={x.href}>
                     <a target="_blank">{x.name}</a>
                   </Link>{' '}
                 </>
