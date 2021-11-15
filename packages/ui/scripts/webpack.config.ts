@@ -156,6 +156,10 @@ const webpackConfig = (): webpack.Configuration => ({
       ]),
     ],
   },
+  externals: {
+    react: 'react',
+    next: 'next',
+  },
   module: {
     strictExportPresence: true,
     rules: [
