@@ -13,6 +13,7 @@ import ModuleNotFoundPlugin from 'react-dev-utils/ModuleNotFoundPlugin'
 import ModuleScopePlugin from 'react-dev-utils/ModuleScopePlugin'
 import TerserPlugin from 'terser-webpack-plugin'
 import webpack from 'webpack'
+import nodeExternals from 'webpack-node-externals'
 import Webpackbar from 'webpackbar'
 import getClientEnvironment from './env'
 import paths from './paths'
@@ -153,10 +154,8 @@ const webpackConfig = (): webpack.Configuration => ({
       ]),
     ],
   },
-  externals: {
-    react: 'react',
-    next: 'next',
-  },
+  externalsPresets: { node: true },
+  externals: [nodeExternals()],
   module: {
     strictExportPresence: true,
     rules: [
