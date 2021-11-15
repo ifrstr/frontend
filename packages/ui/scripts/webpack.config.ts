@@ -132,7 +132,7 @@ const webpackConfig = (): webpack.Configuration => ({
     ],
   },
   resolve: {
-    modules: ['node_modules', paths.appNodeModules].concat([]),
+    modules: ['node_modules', paths.appNodeModules],
     extensions: [
       '.web.mjs',
       '.mjs',
@@ -146,9 +146,6 @@ const webpackConfig = (): webpack.Configuration => ({
       '.web.jsx',
       '.jsx',
     ],
-    alias: {
-      'react-native': 'react-native-web',
-    },
     plugins: [
       new ModuleScopePlugin(paths.appSrc, [
         paths.appPackageJson,
