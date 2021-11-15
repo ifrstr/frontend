@@ -28,7 +28,6 @@ export default {
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
   appTsConfig: resolveApp('tsconfig.json'),
-  appNodeModules: resolveApp('node_modules'),
 }
 
 export { moduleFileExtensions }

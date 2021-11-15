@@ -5,7 +5,6 @@ process.env.NODE_ENV = 'production'
 
 import CSSMinimizerWebpackPlugin from 'css-minimizer-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
-import path from 'path'
 import postcssNormalize from 'postcss-normalize'
 // import safePostCssParser from 'postcss-safe-parser'
 import getCSSModuleLocalIdent from 'react-dev-utils/getCSSModuleLocalIdent'
@@ -84,13 +83,7 @@ const webpackConfig = (): webpack.Configuration => ({
   entry: [paths.appIndexJs, paths.appIndexCss],
   output: {
     path: paths.appBuild,
-    pathinfo: false,
     filename: 'index.js',
-    devtoolModuleFilenameTemplate: (info: { absoluteResourcePath: string }) =>
-      path
-        .relative(paths.appSrc, info.absoluteResourcePath)
-        .replace(/\\/g, '/'),
-    globalObject: 'this',
     library: { type: 'commonjs2' },
   },
   optimization: {
@@ -133,7 +126,6 @@ const webpackConfig = (): webpack.Configuration => ({
     ],
   },
   resolve: {
-    modules: ['node_modules', paths.appNodeModules],
     extensions: [
       '.web.mjs',
       '.mjs',
