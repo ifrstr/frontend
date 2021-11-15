@@ -4,7 +4,6 @@ process.env.BABEL_ENV = 'production'
 process.env.NODE_ENV = 'production'
 
 import CSSMinimizerWebpackPlugin from 'css-minimizer-webpack-plugin'
-import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import path from 'path'
 import postcssNormalize from 'postcss-normalize'
@@ -12,7 +11,6 @@ import postcssNormalize from 'postcss-normalize'
 import getCSSModuleLocalIdent from 'react-dev-utils/getCSSModuleLocalIdent'
 import ModuleNotFoundPlugin from 'react-dev-utils/ModuleNotFoundPlugin'
 import ModuleScopePlugin from 'react-dev-utils/ModuleScopePlugin'
-import resolve from 'resolve'
 import TerserPlugin from 'terser-webpack-plugin'
 import webpack from 'webpack'
 import Webpackbar from 'webpackbar'
@@ -283,24 +281,6 @@ const webpackConfig = (): webpack.Configuration => ({
     new webpack.IgnorePlugin({
       resourceRegExp: /^\.\/locale$/,
       contextRegExp: /moment$/,
-    }),
-    new ForkTsCheckerWebpackPlugin({
-      typescript: resolve.sync('typescript', {
-        basedir: paths.appNodeModules,
-      }),
-      async: false,
-      checkSyntacticErrors: true,
-      tsconfig: paths.appTsConfig,
-      reportFiles: [
-        '../**/src/**/*.{ts,tsx}',
-        '**/src/**/*.{ts,tsx}',
-        '!**/src/**/__tests__/**',
-        '!**/src/**/?(*.)(spec|test).*',
-        '!**/src/setupProxy.*',
-        '!**/src/setupTests.*',
-      ],
-      silent: true,
-      formatter: 'codeframe',
     }),
   ],
   performance: false,
