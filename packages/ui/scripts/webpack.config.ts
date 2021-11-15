@@ -147,7 +147,7 @@ const webpackConfig = (): webpack.Configuration => ({
     ],
   },
   externalsPresets: { node: true },
-  externals: [nodeExternals()],
+  externals: [nodeExternals({ additionalModuleDirs: ['../../node_modules'] })],
   module: {
     strictExportPresence: true,
     rules: [
