@@ -1,13 +1,10 @@
 import 'normalize.css'
-import '@ifrstr/ui//styles/index.css'
+import '@ifrstr/ui/build/index.css'
 import '../styles/globals.css'
 
 import type { AppProps } from 'next/app'
 
-import App from '@ifrstr/ui/components/layout/App'
-import Main from '@ifrstr/ui/components/layout/Main'
-import Footer from '@ifrstr/ui/components/layout/Footer'
-import NavBar from '@ifrstr/ui/components/layout/NavBar'
+import { App, Main, Footer, NavBar } from '@ifrstr/ui'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
