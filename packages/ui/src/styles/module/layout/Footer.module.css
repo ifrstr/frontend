@@ -1,5 +1,5 @@
 .bottom-border {
-  border-bottom: '1px solid var(--str-f-p)';
+  border-bottom: 1px solid var(--str-f-p);
 }
 
 .left {
