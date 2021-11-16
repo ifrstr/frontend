@@ -42,24 +42,25 @@ const Footer: React.FC<FooterProps> = (props: FooterProps) => {
             )}
             {props.legalLinks &&
               props.legalLinks.map((x) => (
+                <>
+                  <Link href={x.href} key={x.href}>
+                    <a target="_blank">
+                      <span>{x.name}</span>
+                    </a>
+                  </Link>{' '}
+                </>
+              ))}
+          </div>
+          {props.beian &&
+            props.beian.map((x) => (
+              <>
                 <Link href={x.href} key={x.href}>
                   <a target="_blank">
                     <span>{x.name}</span>
                   </a>
-                </Link>
-              ))}
-          </div>
-          {props.beian && (
-            <p>
-              {props.beian.map((x) => (
-                <>
-                  <Link href={x.href} key={x.href}>
-                    <a target="_blank">{x.name}</a>
-                  </Link>{' '}
-                </>
-              ))}
-            </p>
-          )}
+                </Link>{' '}
+              </>
+            ))}
         </section>
       </div>
     </footer>
