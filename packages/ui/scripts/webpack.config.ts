@@ -79,7 +79,7 @@ const webpackConfig = (): webpack.Configuration => ({
   mode: 'production',
   target: 'node',
   devtool: 'source-map',
-  entry: [paths.appIndexJs, paths.appIndexCss],
+  entry: [paths.appIndexCss, paths.appIndexJs],
   output: {
     path: paths.appBuild,
     filename: 'index.js',
