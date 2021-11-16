@@ -16,8 +16,6 @@ import Webpackbar from 'webpackbar'
 import getClientEnvironment from './env'
 import paths from './paths'
 
-type ExcludesFalse = <T>(x: T | false) => x is T
-
 const cssRegex = /\.css$/
 const cssModuleRegex = /\.module\.css$/
 const sassRegex = /\.(scss|sass)$/
@@ -28,7 +26,7 @@ function getStyleLoaders(
   preProcessor?: string
 ): webpack.RuleSetUseItem[] {
   let loaders: webpack.RuleSetUseItem[] = [
-    !cssOptions.modules && {
+    {
       loader: MiniCssExtractPlugin.loader,
     },
     {
@@ -53,7 +51,7 @@ function getStyleLoaders(
         sourceMap: true,
       },
     },
-  ].filter(Boolean as any as ExcludesFalse)
+  ]
 
   if (preProcessor) {
     loaders.push(
