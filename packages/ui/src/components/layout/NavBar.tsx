@@ -10,7 +10,7 @@ const NavBar: React.FC<NavBarProps> = (props: NavBarProps) => (
     <div>
       <ul>
         {props.links.map((x: StrLink) => (
-          <li>
+          <li key={x.href}>
             <Link href={x.href}>
               <a>
                 <span>{x.name}</span>
