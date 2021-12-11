@@ -44,7 +44,7 @@ const Footer: React.FC<FooterProps> = (props: FooterProps) => {
               props.legalLinks.map((x) => (
                 <>
                   <Link href={x.href} key={x.href}>
-                    <a target="_blank">
+                    <a target="_blank" rel="noopener noreferrer">
                       <span>{x.name}</span>
                     </a>
                   </Link>{' '}
@@ -55,7 +55,7 @@ const Footer: React.FC<FooterProps> = (props: FooterProps) => {
             props.beian.map((x) => (
               <>
                 <Link href={x.href} key={x.href}>
-                  <a target="_blank">
+                  <a target="_blank" rel="noopener noreferrer">
                     <span>{x.name}</span>
                   </a>
                 </Link>{' '}

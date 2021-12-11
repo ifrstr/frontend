@@ -54,7 +54,9 @@ const LegacyProj: NextPage = () => (
           <a href="#rmbox">Rmbox</a>。
         </p>
         <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/legacy/proj/RuminoidSetup_v0.2.5.0.exe">
-          <a target="_blank">立即下载</a>
+          <a target="_blank" rel="noopener noreferrer">
+            立即下载
+          </a>
         </Link>
       </section>
 
@@ -85,7 +87,9 @@ const LegacyProj: NextPage = () => (
               <td>v0.5.6</td>
               <td>
                 <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.6/rmbox-win.zip">
-                  <a target="_blank">v0.5.6/rmbox-win.zip</a>
+                  <a target="_blank" rel="noopener noreferrer">
+                    v0.5.6/rmbox-win.zip
+                  </a>
                 </Link>
               </td>
             </tr>
@@ -94,7 +98,9 @@ const LegacyProj: NextPage = () => (
               <td>v0.5.6</td>
               <td>
                 <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.6/rmbox-install.exe">
-                  <a target="_blank">v0.5.6/rmbox-install.exe</a>
+                  <a target="_blank" rel="noopener noreferrer">
+                    v0.5.6/rmbox-install.exe
+                  </a>
                 </Link>
               </td>
             </tr>
@@ -103,7 +109,9 @@ const LegacyProj: NextPage = () => (
               <td>v0.5.6</td>
               <td>
                 <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.6/rmbox-osx.zip">
-                  <a target="_blank">v0.5.6/rmbox-osx.zip</a>
+                  <a target="_blank" rel="noopener noreferrer">
+                    v0.5.6/rmbox-osx.zip
+                  </a>
                 </Link>
               </td>
             </tr>
@@ -112,7 +120,9 @@ const LegacyProj: NextPage = () => (
               <td>v0.5.6</td>
               <td>
                 <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.6/rmbox-app.dmg">
-                  <a target="_blank">v0.5.6/rmbox-app.dmg</a>
+                  <a target="_blank" rel="noopener noreferrer">
+                    v0.5.6/rmbox-app.dmg
+                  </a>
                 </Link>
               </td>
             </tr>
@@ -121,7 +131,9 @@ const LegacyProj: NextPage = () => (
               <td>v0.5.6</td>
               <td>
                 <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.6/rmbox-linux.zip">
-                  <a target="_blank">v0.5.6/rmbox-linux.zip</a>
+                  <a target="_blank" rel="noopener noreferrer">
+                    v0.5.6/rmbox-linux.zip
+                  </a>
                 </Link>
               </td>
             </tr>
@@ -146,7 +158,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.5.5</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.5/rmbox-win.zip">
-                      <a target="_blank">v0.5.5/rmbox-win.zip</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.5.5/rmbox-win.zip
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -155,7 +169,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.5.5</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.5/rmbox-install.exe">
-                      <a target="_blank">v0.5.5/rmbox-install.exe</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.5.5/rmbox-install.exe
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -164,7 +180,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.5.5</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.5/rmbox-osx.zip">
-                      <a target="_blank">v0.5.5/rmbox-osx.zip</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.5.5/rmbox-osx.zip
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -173,7 +191,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.5.5</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.5/rmbox-app.dmg">
-                      <a target="_blank">v0.5.5/rmbox-app.dmg</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.5.5/rmbox-app.dmg
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -182,7 +202,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.5.5</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.5/rmbox-linux.zip">
-                      <a target="_blank">v0.5.5/rmbox-linux.zip</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.5.5/rmbox-linux.zip
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -204,7 +226,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.5.4</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.4/rmbox-win.zip">
-                      <a target="_blank">v0.5.4/rmbox-win.zip</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.5.4/rmbox-win.zip
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -213,7 +237,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.5.4</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.4/rmbox-install.exe">
-                      <a target="_blank">v0.5.4/rmbox-install.exe</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.5.4/rmbox-install.exe
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -222,7 +248,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.5.4</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.4/rmbox-osx.zip">
-                      <a target="_blank">v0.5.4/rmbox-osx.zip</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.5.4/rmbox-osx.zip
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -231,7 +259,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.5.4</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.4/rmbox-app.dmg">
-                      <a target="_blank">v0.5.4/rmbox-app.dmg</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.5.4/rmbox-app.dmg
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -240,7 +270,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.5.4</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.4/rmbox-linux.zip">
-                      <a target="_blank">v0.5.4/rmbox-linux.zip</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.5.4/rmbox-linux.zip
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -262,7 +294,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.4.0</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.4.0/rmbox-win.zip">
-                      <a target="_blank">v0.4.0/rmbox-win.zip</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.4.0/rmbox-win.zip
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -271,7 +305,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.4.0</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.4.0/rmbox-install.exe">
-                      <a target="_blank">v0.4.0/rmbox-install.exe</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.4.0/rmbox-install.exe
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -280,7 +316,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.4.0</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.4.0/rmbox-osx.zip">
-                      <a target="_blank">v0.4.0/rmbox-osx.zip</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.4.0/rmbox-osx.zip
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -289,7 +327,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.4.0</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.4.0/rmbox-app.dmg">
-                      <a target="_blank">v0.4.0/rmbox-app.dmg</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.4.0/rmbox-app.dmg
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -298,7 +338,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.4.0</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.4.0/rmbox-linux.zip">
-                      <a target="_blank">v0.4.0/rmbox-linux.zip</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.4.0/rmbox-linux.zip
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -320,7 +362,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.3.3</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.3.3/rmbox-win.zip">
-                      <a target="_blank">v0.3.3/rmbox-win.zip</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.3.3/rmbox-win.zip
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -329,7 +373,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.3.3</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.3.3/rmbox-install.exe">
-                      <a target="_blank">v0.3.3/rmbox-install.exe</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.3.3/rmbox-install.exe
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -338,7 +384,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.3.3</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.3.3/rmbox-osx.zip">
-                      <a target="_blank">v0.3.3/rmbox-osx.zip</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.3.3/rmbox-osx.zip
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -347,7 +395,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.3.3</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.3.3/rmbox-app.dmg">
-                      <a target="_blank">v0.3.3/rmbox-app.dmg</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.3.3/rmbox-app.dmg
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -356,7 +406,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.3.3</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.3.3/rmbox-linux.zip">
-                      <a target="_blank">v0.3.3/rmbox-linux.zip</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.3.3/rmbox-linux.zip
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -378,7 +430,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.2.6</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.2.6/rmbox-win.zip">
-                      <a target="_blank">v0.2.6/rmbox-win.zip</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.2.6/rmbox-win.zip
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -387,7 +441,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.2.6</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.2.6/rmbox-osx.zip">
-                      <a target="_blank">v0.2.6/rmbox-osx.zip</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.2.6/rmbox-osx.zip
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -396,7 +452,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.2.6</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.2.6/rmbox-linux.zip">
-                      <a target="_blank">v0.2.6/rmbox-linux.zip</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.2.6/rmbox-linux.zip
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -418,7 +476,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.2.1</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.2.1/rmbox-win.zip">
-                      <a target="_blank">v0.2.1/rmbox-win.zip</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.2.1/rmbox-win.zip
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -427,7 +487,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.2.1</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.2.1/rmbox-osx.zip">
-                      <a target="_blank">v0.2.1/rmbox-osx.zip</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.2.1/rmbox-osx.zip
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -436,7 +498,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.2.1</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.2.1/rmbox-linux.zip">
-                      <a target="_blank">v0.2.1/rmbox-linux.zip</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        v0.2.1/rmbox-linux.zip
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -466,7 +530,9 @@ const LegacyProj: NextPage = () => (
           Classic，只需将原来安装的插件删除后重新复制到目标文件夹即可。
         </p>
         <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/legacy/proj/Ruminoid.SubLight.Classic.0.2.8.aex">
-          <a target="_blank">立即下载</a>
+          <a target="_blank" rel="noopener noreferrer">
+            立即下载
+          </a>
         </Link>
         <p>
           <details>
@@ -483,7 +549,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.2.7</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/legacy/proj/Ruminoid.SubLight.Classic.0.2.7.aex">
-                      <a target="_blank">下载</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        下载
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -491,7 +559,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.2.6</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/legacy/proj/Ruminoid.SubLight.Classic.0.2.6.aex">
-                      <a target="_blank">下载</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        下载
+                      </a>
                     </Link>
                   </td>
                 </tr>
@@ -499,7 +569,9 @@ const LegacyProj: NextPage = () => (
                   <td>v0.2.5</td>
                   <td>
                     <Link href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/legacy/proj/Ruminoid.SubLight.Classic.0.2.5.aex">
-                      <a target="_blank">下载</a>
+                      <a target="_blank" rel="noopener noreferrer">
+                        下载
+                      </a>
                     </Link>
                   </td>
                 </tr>
