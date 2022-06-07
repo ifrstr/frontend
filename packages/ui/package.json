@@ -51,7 +51,7 @@
     "postcss-loader": "*",
     "postcss-normalize": "*",
     "postcss-safe-parser": "*",
-    "react-dev-utils": "^11",
+    "react-dev-utils": "^12",
     "resolve": "*",
     "resolve-url-loader": "*",
     "sass-loader": "*",
