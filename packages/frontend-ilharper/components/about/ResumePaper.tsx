@@ -6,7 +6,7 @@ const ResumePaper: React.FC = (props) => (
     <style jsx>{`
       #paper {
         box-shadow: black 0 0 18px;
-        max-width: min(80vw, 900px);
+        max-width: 900px;
         margin: 36px;
         padding: 24px 0;
       }
