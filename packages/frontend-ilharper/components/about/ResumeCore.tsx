@@ -143,14 +143,14 @@ const ResumeCore: React.FC = () => (
         <li>
           <b>DevOps：</b>熟悉 GitHub Actions 和 GitLab CI 等 CI/CD 环境；
           <br />
-          熟悉 MySQL 和 MongoDB，熟悉 Linux 和 Docker 等相关技术；
+          熟悉 Linux 和 Docker 等相关技术，了解 MySQL 和 MongoDB；
           <br />
           能够独立完成大型分布式 Web 应用的部署、监控和运维。
         </li>
 
         <li>
-          <b>其他：</b>熟悉 Qt、WinForm 和 WPF 等原生应用框架，
-          能够快速开发桌面应用。
+          <b>其他：</b>熟悉 WPF，了解 Qt 和 WinForm
+          等原生应用框架，能够快速开发桌面应用。
         </li>
       </ul>
     </section>
@@ -175,7 +175,7 @@ const ResumeCore: React.FC = () => (
             </a>
           </Link>
           <br />
-          基于 Next.js SSG 的一个简单的猜歌小游戏，使用 Hooks 开发。
+          基于 Next.js SSG 的一个简单的猜歌小游戏，使用 React Hooks 开发。
         </li>
 
         <li>
