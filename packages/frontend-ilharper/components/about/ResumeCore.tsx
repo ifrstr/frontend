@@ -130,7 +130,8 @@ const ResumeCore: React.FC = () => (
 
         <li>
           <b>后端：</b>熟悉 Node.js，熟悉 Express 和 Koa，了解 Nest.js；
-          能够快速开发后端服务和微服务。
+          <br />
+          了解 Spring、ASP.NET 和 Golang，能够快速开发后端服务和微服务。
         </li>
 
         <li>
