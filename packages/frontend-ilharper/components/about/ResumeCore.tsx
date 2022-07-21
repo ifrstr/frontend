@@ -209,3 +209,10 @@ const ResumeCore: React.FC = () => (
 )
 
 export { ResumeCore }
+
+// 个人优势
+//
+// · 熟悉 JavaScript/TypeScript，具备良好的编程习惯
+// · 熟练使用 React 框架进行前端、客户端、小程序和 Hybrid 应用的开发
+// · 热爱开源，在GitHub拥有自己的开源项目：github.com/ilharp
+// · 查看我的简历：go.ilharper.com/resumepdf　或直接联系我：hi@ilharper.com
